@@ -45,6 +45,9 @@
   background: linear-gradient(180deg, #1d110b , #845616);
   color: #FFFFFF;
 }
+.trial{
+  max-width: 1500px;
+}
 
 .free-trial-form h2 {
   text-align: center;
@@ -58,6 +61,7 @@
   font-size: 1rem; /* Adjusted font size */
   color: #DAA520;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .free-trial-form h3 {
@@ -75,9 +79,10 @@
   max-width: 800px;
   margin: 0 auto;
 }
+
 .contact-info {
   flex: 1;
-  min-width: 291px;
+  max-width: 350px;
   padding: 25px;
   border-right: 1px solid rgba(255, 255, 255, .2);
   margin-bottom: 20px;
@@ -90,62 +95,36 @@
   text-align: center;
 }
 
-.contact-main-div{
+.contact-main-div {
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
 }
 
 .contact-item {
-  padding: 10px;
   display: flex;
   align-items: center;
   background: white;
-  flex-direction: column; /* Stack the image above the text */
-  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 50px;
   text-align: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  gap: 10px; /* Adds spacing between image and text */
 }
 
 .contact-item img {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 10px; /* Adds spacing between icon and text */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
-.contact-item a {
-  background-color: white;  /* White background for the icons */
-  border-radius: 50%;  /* Make the background circular */
-  padding: 10px;  /* Add space around the icon */
-  display: inline-block;
-}
-
-.contact-item a img {
-  width: 30px;  /* Adjust the size of the icon */
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-.contact-item a:hover {
-  background-color: #f0f0f0;  /* Slightly darker background on hover */
-}
-
-
 
 .contact-item p {
   font-size: 1rem;
-  line-height: 1.6;
-  color: #fff;
+  color: #333;
+  margin: 0;
 }
-.contact-item a:hover {
-  opacity: 0.8;  /* Slightly dim the icon when hovered */
-  transform: scale(1.1);  /* Make the icon slightly bigger */
-  transition: all 0.3s ease;  /* Smooth transition */
-}
+
 
 
 /* Form Inputs */
