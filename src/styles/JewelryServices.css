@@ -92,15 +92,13 @@
 
 /* Service Item Images */
 .service-item img {
-  /* width: 100%; */
-  object-fit: contain;
-  max-width: 300px;
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  object-fit: cover; /* Ensures uniformity while maintaining aspect ratio */
   border-radius: 50%; /* Circular images */
-  height: 200px;
   margin-bottom: 15px;
   transition: transform 0.3s ease;
 }
-
 .service-item img:hover {
   transform: scale(1.1); /* Subtle zoom effect on hover */
 }
@@ -164,8 +162,8 @@
   }
 
   .service-item img {
-    max-width: 180px; /* Smaller images */
-    height: 150px;
+    width: 160px;
+    height: 160px;
   }
 }
 
@@ -180,9 +178,11 @@
     line-height: 1.5; /* Adjust readability for smaller text */
   }
 
-  .service-item img {
-    max-width: 150px; /* Further reduce image size */
-  }
+  
+    .service-item img {
+      width: 140px;
+      height: 140px;
+    }
 
   .service-list {
     gap: 20px; /* Adjust gap for small screens */
