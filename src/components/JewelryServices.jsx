@@ -2,12 +2,12 @@ import React from "react";
 import "../styles/JewelryServices.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer"; // Import for scroll-triggered animation
-import earrings from "../assets/S-1.png";
-import pendant from "../assets/S-2.png";
-import rings from "../assets/S-4.png";
-import bracelets from "../assets/S-5.png";
-import necklaces from "../assets/S-6.png";
-import watches from "../assets/S-7.png";
+import earrings from "../assets/S1.jpg";
+import pendant from "../assets/S2.jpg";
+import rings from "../assets/S3.jpg";
+import bracelets from "../assets/S4.jpg";
+import necklaces from "../assets/S5.jpg";
+import watches from "../assets/S6.jpg";
 
 const JewelryServices = () => {
   const { ref: paragraphRef, inView: paragraphInView } = useInView({
